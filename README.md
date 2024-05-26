@@ -1,3 +1,5 @@
+# SymTax
+
 To fix and streamline your workflow for running the model, generating taxonomy, and custom training, here is a
 structured approach. Let's break down the instructions into coherent steps and ensure all paths, files, and commands are
 clearly stated.
