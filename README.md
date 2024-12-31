@@ -1,3 +1,7 @@
+## This is the official repository for the paper "SymTax: Symbiotic Relationship and Taxonomy Fusion for Effective Citation Recommendation" presented in ACL 2024.
+## The ArSyTa dataset introduced in the paper is now hosted at HuggingFace https://huggingface.co/datasets/goyalkaraniit/ArSyTa
+
+
 # SymTax
 
 To fix and streamline your workflow for running the model, generating taxonomy, and custom training, here is a
