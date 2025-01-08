@@ -64,7 +64,7 @@ class RerankDataset(Dataset):
         context_id = data["context_id"]
         citing_id = self.context_database[context_id]["citing_id"]
         context_text = self.context_database[context_id]["masked_text"].replace("TARGETCIT", self.cit_token)
-        context_heading = self.context_database[context_id]['heading']
+        #context_heading = self.context_database[context_id]['heading']
         citing_text = self.get_paper_text(citing_id)
 
         positive_ids = data["positive_ids"]
@@ -100,7 +100,7 @@ class RerankDataset(Dataset):
             candidate_text = self.get_paper_text(candidate_id)
 
             query_text_list.append(" ".join(citing_text.split()[:int(
-                self.max_input_length * 0.35)]) + self.sep_token + context_heading + context_text)
+                self.max_input_length * 0.35)]) + self.sep_token + context_text)
             candidate_text_list.append(candidate_text)
             # mayank inserted code here per
             category_candidate.append(self.get_paper_cat(candidate_id))
