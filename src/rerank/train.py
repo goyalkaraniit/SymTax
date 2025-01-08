@@ -17,10 +17,11 @@ import numpy as np
 import argparse
 from model import Scorer_PER_v2, Scorer_PER_v1
 
-llm_type = 'specter'
-# llm_type = 'scibert'
-scorer_version = 'v2'
+#llm_type = 'specter'
+llm_type = 'scibert'
+scorer_version = 'v1'
 fusion_type = 'text'
+#fusion_type = 'graph
 
 
 # fusion_type = 'graph'
